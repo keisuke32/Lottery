@@ -1,0 +1,195 @@
+** Version 2.0.1 **
+- Add: [vendor] tag for email notifications recipients
+- Fix: small bugs
+
+** Version 2.0.0 **
+- Add: Elementor support
+- Add: updated POT translation file
+- Fix: lotteries winners shortcode problem
+
+** Version 1.1.28 **
+- Add: admin email finish lottery now with links to winning user profile, winning order and lottery
+
+** Version 1.1.27 **
+- Fix: updating ticket quantity in cart
+- Fix: max tickets number setting cannot be 0
+- Fix: typos
+- Add: lotteries shortcode now with paging and attributes like products WooCommerce shortcode
+- Add: winner link in edit lottery leads now to user profile instead refreshing current page
+
+** Version 1.1.26 **
+- Fix: showing time left when it was disabled (in widgets)
+- Fix: performance
+- Fix: fatal error sometimes when Elementor is enabled
+
+** Version 1.1.25 **
+- Fix: reset stock when enabled "Remove ticket numbers from orders with wrong answer."
+- Fix: wrong directory name
+- Fix: version numbers
+
+** Version 1.1.24 **
+- Fix: decimal separator bug
+- Fix: tickets per user limit in frontend
+- Fix: tax ignored in display price
+- Fix: required fields when publishing lottery
+- Fix: wrong message for future lotteries in widget
+- Add: do not mix lotteries with regular products disabled by default
+
+** Version 1.1.23 **
+- Fix: Add class variables for removing hooks
+- Fix: Button change price with qty
+- Add: Add hook lottery_product_save_data
+- Fix: Added failed message with reason for user on single lottery page
+- Fix: Changing order status after relist and delete log bug
+
+** Version 1.1.22 **
+- Add: extend lottery end date with all previously sold tickets (ticket rollover for failed lotteries)
+- Add: delete logs on lottery relist
+- Add: lottery failed notification for participants
+- Fix: sold individually option problem
+
+** Version 1.1.21 **
+- Fix: Updating product lookup table
+- Fix: Small bug when cancelling order
+- Add: Added WPMU support
+
+** Version 1.1.20 **
+- Fix: stock problem with free lotteries
+- Add: Added argument for future lotteries to ending_soon_lotteries shortcode [ending_soon_lotteries per_page='12' columns='4' order='asc' future='yes' ]
+- Fix: Automatic partial refund
+
+** Version 1.1.19 **
+- Fix: Future lottery shortcode
+- Fix: Dateformat fix for widgets and shortcodes
+- Fix: Datetime format taken from WP settings for timestamp in lottery history tab
+- Fix: Plain email template lottery_finish.php
+
+** Version 1.1.18 **
+- Fix: Adding lotteries to my lotteries field
+- Fix: Changed ajax function call for deliting logs
+- Add: New action on ajax deleting log 'wc_lottery_delete_participate_entry'
+
+** Version 1.1.17 **
+- Fix: Max ticket per user bug
+
+** Version 1.1.16 **
+- Fix: Removing lottery from users my lotteries list when deleting log in admin
+- Fix: Sending emails after lottery is closed bug for manually picked winners
+- Fix: Enable login at checkout for lottery with no max ticket per user
+
+** Version 1.1.15 **
+- Fix: my_lotteries shortcode problem with relisted lotteries
+- Fix: Problem with old meta when duplicating lottery product
+- Fix: Critical error on refund for php > 7
+- Fix: Refund notice for payment that does not support automatic refund
+
+** Version 1.1.14 **
+- Fix: Admin relist info in lottery history metabox
+- Fix: Price is not set to 0 if price input is left blank
+- Add: Redirection to previous page after login
+
+** Version 1.1.13 **
+- Fix: Added message for nonlogged users on my_lotteries shortcode
+- Add: finished_lotteries shortcode
+- Fix: Replaced woocommerce_get_page_id with wc_get_page_id
+
+** Version 1.1.12 **
+- Fix: Translation bug with "You have bought %d tickets for this lottery!" string
+- Fix: Shortcode  bug when option "Show finished lotteries" is false 
+- Fix: lang domain fix
+
+** Version 1.1.11 **
+- Fix: Relist future loteries bug
+- Fix: plural translation problems in message "you have bought..."
+- Add: ability to clear on hold orders that are preventing lottery to end
+- Add: Filters woocomerce_lottery_history, woocommerce_lottery_winners, woocommerce_lottery_participants
+
+** Version 1.1.10 **
+- Fix: WPML compatibility bug
+- Fix: Problem when 3rd party plugin removes product object
+- Fix: Plural translation problems
+
+** Version 1.1.9 **
+- Fix: Removed lottery column from WooCommerce orders view
+- Fix: Bug with multiple winners
+
+** Version 1.1.8 **
+- Fix: Shortcode problem when "do not mix" enabled in settings
+
+** Version 1.1.7 **
+- Add: Limit ticket by lottery in the quantity selector
+- Fix: Change name of js function from countdown to wc_lottery_countdown
+- Fix: Countdown format bug
+- Fix: Changed admin dashboard widget
+- Fix: Php notice in backend WooCommerce email settings
+- Fix: Progress bar on firefox
+- Add: Compact countdown option
+- Fix: Bug with filtering lotteries from shop page
+- Fix: Bug with title on lotteries base page
+
+** Version 1.1.6 **
+- Fix: Bugs in admin backend filter product on PHP v7.1.x
+- Fix: Future lottery not showing once it starts
+
+** Version 1.1.5 **
+- Fix: Sending multiple "no luck" emails to same user
+- Fix: Stock status not changing after lottery relist
+
+** Version 1.1.4 **
+- Add: Added sale price for lottery products
+- Fix: Bug not creating log table on activation
+
+** Version 1.1.3 **
+- Fix: Filtering lotteries in admin area
+- Fix: Featured lotteries shortcode bug
+- Fix: Lotteries shortcode bug
+- Fix: WooCommerce Recently Viewed lotteries widget bug
+- Fix: Virtual and downloadable chackbox bug
+
+** Version 1.1.2 **
+- Fix: Featured widget bug
+- Fix: Typos
+- Fix: Check for minimal PHP and WordPress versions to avoid fatal errors on activating plugin in unsupported environment
+
+** Version 1.1.1 **
+- Fix: query problems with WooCommerce >= 3.0.0
+- Fix: WPML bug when using secondary language without main language
+
+** Version 1.1 **
+- Fix: WooCommerce >= 3.0.0 compatibility
+- Fix: Delete entry when order is cancelled
+- Fix: Multiple failed emails to same user
++ Add: manual lottery relist feature
++ Add: Added [vendor] tag for sending mail to lottery author/vendor on lottery_fail, lottery_finished - useful with multivendor plugins like WC Vendors or if you want to send email to lottery author or owner in case of multivendor site
+
+** Version 1.0.8 **
+- Fix: Shortcode lotteries_winners not showing winners when item is out of stock
+
+** Version 1.0.7 **
+- Fix: Add to cart button text
+
+** Version 1.0.6 **
+- Fix: JS bug in frontend
+
+** Version 1.0.5 **
++ Add: Shortcode for displaying lottery winners [lotteries_winners]
+- Fix: Issue with wpml language switcher
+
+** Version 1.0.4 **
+- Fix: Bug with Wp_Meta_Query
+
+** Version 1.0.3 **
+- Fix: Check if user is logged only for lottery products
+- Fix: Small language changes
+- Fix: Problem with language data
+
+** Version 1.0.2 **
+- Fix: Problem with translating counter labels
++ Add: option to instantly finish lottery when maximum number of tickets was sold
+
+** Version 1.0.1 **
+- Fix: Small bugs
++ Add: Refund feature for lotteries that failed due minimum participants limit
+
+** Version 1.0.0 **
+- Initial release
